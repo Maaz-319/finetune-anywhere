@@ -1,0 +1,7 @@
+data/
+results/
+runs/
+*.gguf
+*.png
+last.svg
+__pycache__/

@@ -1,0 +1,9 @@
+# Training runs on Kaggle with its own install cell.
+# These packages are for local data prep, scoring and the demo.
+datasets>=4.3.0
+transformers>=4.57.6
+cairosvg>=2.7
+scikit-image>=0.24
+pillow>=10.0
+gradio>=5.0
+pyyaml>=6.0

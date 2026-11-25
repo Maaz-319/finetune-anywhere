@@ -1,0 +1,31 @@
+# Copy this folder to showcase/qwen-local-hackathon-2026/motifforge/
+# Replace every placeholder before opening the pull request.
+project_name: MotifForge
+slug: motifforge
+event: qwen-local-hackathon-2026
+members:
+- name: Maaz
+  github: maaz
+- name: Ahmad
+  github: ahmad
+- name: Waleed
+  github: waleed
+one_liner: Generate clean, editable SVG motifs from text on a laptop.
+base_model: Qwen3 1.7B (Apache-2.0)
+training_tool: unsloth
+training_platform: kaggle
+method: qlora
+dataset:
+  description: Captioned SVG-Stack subset plus original evaluation prompts.
+  size: 6000
+  link: https://huggingface.co/datasets/JackertheHacker/svg-stack-qwen-captioned-subset
+model_link: https://huggingface.co/your-user/motifforge
+quantization: Q4_K_M
+runtime: ollama
+hardware_tested: Lenovo ThinkBook 14 G6, 16 GB DDR5, Ubuntu, CPU only
+demo_video: https://example.org/your-demo-video
+repo_link: https://github.com/your-user/finetune-anywhere
+before_after:
+  prompt: A minimal three petal flower motif in deep teal and warm sand.
+  base_output: Empty or malformed SVG
+  finetuned_output: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="24" fill="#1f6f78"/></svg>
